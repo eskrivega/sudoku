@@ -1,8 +1,8 @@
-#Automatic Sudoku solver with GUI
+# Automatic Sudoku solver with GUI
 
 Hello! This programm will help you beat any sudoku puzzle that has a solution at all. You can try it out with https://sudoku.com.
 
-###Setup and run
+### Setup and run
 
 First, you need to install pygame library by typing: `pip install pygame`
 
