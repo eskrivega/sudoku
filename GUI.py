@@ -133,8 +133,9 @@ class Grid:
                 self.cubes[row][col].set(i)
                 self.cubes[row][col].draw_change(self.win, True)
                 self.update_model()
-                pygame.display.update()
+                pygame.event.get()
                 pygame.time.delay(100)
+                pygame.display.update()
 
                 if self.solve_gui():
                     return True
@@ -143,8 +144,9 @@ class Grid:
                 self.cubes[row][col].set(0)
                 self.update_model()
                 self.cubes[row][col].draw_change(self.win, False)
-                pygame.display.update()
+                pygame.event.get()
                 pygame.time.delay(100)
+                pygame.display.update()
 
         return False
 
